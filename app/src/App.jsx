@@ -4,7 +4,7 @@ import './App.css'
 
 import { ethers } from 'ethers';
 import Telephone from '../../contract/artifacts/contracts/Telephone.sol/Telephone.json';
-const IPFS = require('ipfs-core')
+// import IPFS from 'ipfs-core';
 
 const chainID = 3; // ropsten
 const contractAddr = "0xD1c5239047212bCEeB66e79399031ffC0c99D779";
