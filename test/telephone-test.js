@@ -18,6 +18,7 @@ describe("Telephone", function () {
     it("Should mint the initial token", async function () {
         expect(await telephone.getLatest()).to.equal(1);
         expect(await telephone.getHash(1)).to.equal(uris[0]);
+        expect(await telephone.getLatestURI()).to.equal(uris[0])
     });
 
     it("Should mint a child token", async function () {

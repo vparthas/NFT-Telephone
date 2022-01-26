@@ -25,6 +25,10 @@ contract Telephone is ERC721URIStorage {
         return _tokens[_size - 1];
     }
 
+    function getLatestURI() public view returns (string memory) {
+        return getHash(getLatest());
+    }
+
     function isValidToken(uint token) public view returns (bool) {
         return (keccak256(bytes(_hashes[token])) != keccak256("")); 
     }
